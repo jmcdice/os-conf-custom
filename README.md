@@ -34,7 +34,7 @@ Any new deployments will get this by default
   $ bosh update-config --name=project --type=runtime project-manifest.yml
 ```
 
-Existing bosh deployments need to be updated with the new config.
+Existing bosh deployments need to be updated with the new config (think.. apply-changes).
 ```console
   $ bosh -d <deployment> manifest > deployment.yml
   $ bosh -d <deployment> deploy deployment.yml
