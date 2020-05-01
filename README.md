@@ -16,9 +16,9 @@ releases:
 
 addons:
   - name: os-configuration
-    # include:
-      # deployments:
-        # - cfcr
+      exclude:
+        instance_type:
+          - worker
     jobs:
     - name: pre-start-script
       release: os-conf
